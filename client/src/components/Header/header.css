@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Syne:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    --red: #d43838;
+    --green:#38d467;
+}
+header{
+    background-color: #030202;
+    font-family: 'Syne', sans-serif;
+    text-decoration: none;
+}
+.header-container{
+    text-decoration: none;
+    width:85%;
+    height: 8vh;
+    margin: 0 auto;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:10px 0px;
+}
+.brand-logo > h1{
+    color:white;
+    font-weight: 700;
+    font-size:4.5em;
+}
+.orange-red{
+    color:var(--red)
+}
+nav {
+    text-decoration: none;
+}
+nav > a{
+    text-decoration: none;
+    margin:0px 15px;
+    color:white;
+    font-size: 20px;
+}
+nav > a:hover {
+    text-decoration: none;
+    color: var(--red);
+}
+.button-container{
+    display:flex;
+    align-items: center;
+}
+.log-in-btn{
+    text-decoration: none;
+    color:white;
+    margin:0px 15px;
+    font-size: 15px;
+}
+.log-in-btn:hover {
+    color: var(--red);
+}
+.sign-up-btn {
+    text-decoration: none;
+    padding:10px 20px;
+    color: white;
+    background-color: rgb(170, 169, 169);
+    border:none;
+    border-radius:8px;
+    margin:0px 15px;
+    font-size: 15px;
+}
+.sign-up-btn:hover {
+    color: var(--red);
+    background-color: var(--red)
+}
+#menu{
+    display:none;
+}
+/* TABLETS PORTRAIT */
+@media screen and (max-width: 767px) {
+    .header-container{
+        width:90%;
+        align-items: center;
+    }
+    .brand-logo > h1{
+        font-size: 2.15em;
+    }
+    nav{
+        display:none;
+    }
+    .log-in-btn, .sign-up-btn{
+        display:none;
+    }
+    #menu{
+        display:block;
+        color:white;
+    }
+}
