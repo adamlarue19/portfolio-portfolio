@@ -1,7 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
@@ -11,9 +11,9 @@ export const NavBar = () => {
     useEffect(() => {
         const onScroll = () => {
             if (window.scrollY > 50) {
-                seeScrolled(true);
+                setScrolled(true);
             } else {
-                seeScrolled(false);
+                setScrolled(false);
             }
         }
 
