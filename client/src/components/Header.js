@@ -3,7 +3,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import { useState, useEffect } from 'react';
 import logo from '../assets/img/logo.svg';
-import navIcon1 from '../assets/img/nav-icon1.svg';
+import logo1 from '../assets/img/Logo2.png';
 import { HashLink } from 'react-router-hash-link';
 import {
     BrowserRouter as Router
@@ -38,7 +38,8 @@ export const NavBar = () => {
             <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
                 <Container>
                     <Navbar.Brand href="/">
-                        <img src={logo} alt="Logo" />
+                    <h1 className='logo1'><img  src={logo1} alt="Logo" /> Adam Larue</h1>
+                        
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav">
                         <span className="navbar-toggler-icon"></span>
@@ -51,7 +52,7 @@ export const NavBar = () => {
                         </Nav>
                         <span className='navbar-text'>
                             <div className='social-icon'>
-                                <a href="https://www.linkedin.com/in/adamparkerlarue/"><img src={navIcon1} alt="" /></a>
+                                {/* <a className='icon-img' href="https://www.linkedin.com/in/adamparkerlarue/"><img src={navIcon1} alt="" /></a> */}
                             </div>
                             <HashLink to='#connect'>
                                 <button className="vvd"><span>Let’s Connect</span></button>
