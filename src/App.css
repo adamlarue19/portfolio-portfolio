@@ -199,11 +199,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     background-repeat: no-repeat;
   }
   
-  .banner-img{
-    height: 53vh;
-    width: 50vh;
-    border-radius: 300px;
-  }
+  
 
 
   .banner .tagline {
